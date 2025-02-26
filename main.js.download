@@ -1,0 +1,12 @@
+const nav = document.getElementById("nav");
+console.log(nav)
+
+nav.addEventListener("click", ()=>{
+    console.log("Click");
+    nav.classList.toggle("open");
+});
+
+function move(route){
+    console.log("sending")
+    window.location.href = route;
+}
