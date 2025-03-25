@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="about.css">
     <link rel="icon" href="./img/logo.ico"  type="image/x-icon">
     <title>Hack The Border: Binational Adversarial Series for the Border Good</title>
 </head>
+
 <body>
     <nav id="nav">
         <div>
@@ -29,18 +31,38 @@
             <li><a href="agenda.html">Agenda</a></li>
         </ul>
     </nav>
+
     <div class="hero">
         <h1>About Our Team</h1>
-        <hr>
+        <hr style="width: 50%; border: none;">
     </div>
-    <section class="images">
-        <h1 style="width: 100%; font-size: 2.5rem;">Principal Investigator</h1>
-        <hr style="width: 100%;">
-        <img src="./img/ServinPP.png" style="max-height: 60vh; width: auto;" alt="">
-        <h2 style="width: 100%; text-align: center; margin-block: 25px; font-size: 1.5rem; ">Christian Servin, Ph.D.</h2>
+
+    <section class="flex-center-column">
+
+        <h1 style="width: 100%; font-size: 2.5rem; margin-bottom: 2%;">Principal Investigator</h1>
+        <hr style="width: 70%; margin-bottom: 2%;">
+
+        <!-- Photo Card for Dr. Servin -->
+        <div class="flex-row-column staff-card">
+            <div class="image-container">
+                <img src="./img/ServinPP.png" class="child-image" alt="">
+            </div>
+            <h2 style="width: 100%; text-align: center; margin-block: 25px; font-size: 1.5rem; ">Christian Servin, Ph.D.</h2>
+        </div>
+
+
         
-		<img src="./img/Nadia.jpg" style="max-height: 40vh; width: auto;" alt="">
-        <h2 style="width: 100%; text-align: center; margin-block: 25px;">Nadia Karichev</h2>
+        <div class="flex-row-column staff-card">
+            <div class="image-container">
+                <img src="./img/ServinPP.png" class="child-image" alt="">
+                <!-- <img src="./img/Nadia.jpg" style="max-height: 40vh; width: auto;" alt=""> -->
+            </div>
+            <h2 style="width: 100%; text-align: center; margin-block: 25px;">Nadia Karichev</h2>
+        </div>
+    
+
+	
+
 		
 		
 		
@@ -49,14 +71,16 @@
 		
 		
 		<h1 style="width: 100%; text-align: center; margin-block-start: 40px; font-size: 2.5rem;">Faculty Specialists</h1>
-        <hr style="width: 100%; margin-block-end: 25px;">
-        <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center; justify-content: center;">
-			
-		<img src="./img/Isaac.jpg" style="max-height: 40vh; width: auto;" alt="">
-        <h2 style="width: 100%; text-align: center; margin-block: 25px;">Isaac Perea</h2>
-		
-		<img src="./img/Pownuk.png" style="max-height: 40vh; width: auto;" alt="">
-        <h2 style="width: 100%; text-align: center; margin-block: 25px;">Dr. Andew Pownuk</h2>
+        <hr style="width: 70%; margin-block-end: 25px;">
+        <div>
+
+            <div class="flex-row-column staff-card">
+                <div class="image-container">
+                    <img src="./img/Pownuk.png" class="child-image" alt="">
+                </div>
+                <h2 style="width: 100%; text-align: center; margin-block: 25px;">Dr. Andew Pownuk</h2>
+            </div>
+
 		</div>
 		
 		
@@ -64,47 +88,52 @@
 		
 		
         <h1 style="width: 100%; text-align: center; margin-block-start: 40px; font-size: 2.5rem;">Staff Members</h1>
-        <hr style="width: 100%; margin-block-end: 25px;">
-        <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center; justify-content: center;">
+        <hr style="width: 90%">
+        <div class="flex-center-row" style="flex-wrap: wrap;">
 
-            <div class="">
-                <img src="./img/jesusR.jpeg" style="max-height: 40vh; width: auto;" alt="">
+            <div class="flex-row-column staff-card">
+                <div class="image-container">
+                    <img src="./img/jesusR.jpeg" class="child-image">
+                </div>
                 <h2 style="width: 100%; text-align: center; margin-block: 25px;">Jesus Ramirez</h2>
             </div>
 
-            <div class="">
-                <img src="./img/dominguez.jpg" style="max-height: 40vh; width: auto;" alt="">
-                <h2 style="width: 100%; text-align: center; margin-block: 25px;">Louis Dominguez</h2>
-            </div>
-			
-            <div class="">
-                <img src="./img/victor.jpeg" style="max-height: 40vh; width: auto;" alt="">
-                <h2 style="width: 100%; text-align: center; margin-block: 25px;">Victor Razo</h2>
+            <div class="flex-row-column staff-card">
+                <div class="image-container">
+                    <img src="./img/ServinPP.png" class="child-image" alt="">
+                
+                </div>
+                <h2 style="width: 100%; text-align: center; margin-block: 25px;">Sabina Sosa</h2>
             </div>
 
-            <div class="">
-                <img src="./img/levario.jpg" style="max-height: 40vh; width: auto;" alt="">
-                <h2 style="width: 100%; text-align: center; margin-block: 25px;">Armando Levario</h2>
+            <div class="flex-row-column staff-card">
+                <div class="image-container">
+                    <img src="./img/Brian.jpg" class="child-image" alt="">
+                  
+                </div>
+                <h2 style="width: 100%; text-align: center; margin-block: 25px;">Brian Casio</h2>
             </div>
-						
-            <div class="">
-                <img src="./img/sirach.jpg" style="max-height: 40vh; width: auto;" alt="">
-                <h2 style="width: 100%; text-align: center; margin-block: 25px;">Sirach Mejia</h2>
-            </div>
-			
-			
-            <div class="">
-                <img src="./img/macias.jpg" style="max-height: 40vh; width: auto;" alt="">
-                <h2 style="width: 100%; text-align: center; margin-block: 25px;">Raul Macias</h2>
-            </div>
-			
-			
 
-            <div class="">
-                <img src="./img/delilah.jpeg" style="max-height: 40vh; width: auto;" alt="">
+            <div class="flex-row-column staff-card">
+                <div class="image-container">
+                    <img src="./img/ServinPP.png" class="child-image" alt="">
+             
+                </div>
+                <h2 style="width: 100%; text-align: center; margin-block: 25px;">Kate Gandara</h2>
+            </div>
+
+
+
+
+            <div class="flex-row-column staff-card">
+                <div class="image-container">
+                    <img src="./img/delilah.jpeg" class="child-image">
+                </div>
                 <h2 style="width: 100%; text-align: center; margin-block: 25px;">Deliliah Esparza~</h2>
             </div>
-			
+
+
+
 
 
 
@@ -112,6 +141,7 @@
         <h1 style="width: 100%; text-align: center; margin-block-start: 40px; font-size: 2.5rem; margin-block: 2.5rem;">Location</h1>
         <iframe style="height: 400px!important;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27141.37173521176!2d-106.40481552089841!3d31.752167299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e75b180ef2a71b%3A0xb37b3b304c954479!2sEl%20Paso%20Community%20College%20-%20Valle%20Verde%20Campus!5e0!3m2!1ses-419!2sus!4v1667345825495!5m2!1ses-419!2sus"  height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
+
     <footer>
         <img src="../img/NSF.png" alt="NSF Logo">
         <img src="../img/elpelectric.png" alt="El Paso Electric Logo">
@@ -120,5 +150,6 @@
         <img src="../img/EPCC_logo.png" alt="EPCC Logo">
         <img src="../img/IEEE-Logo.jpg" alt="IEEE Logo">
     </footer>
+
     <script src="./js/main.js" type="text/javascript"></script>
 </body>

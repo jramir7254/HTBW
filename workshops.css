@@ -1,0 +1,10 @@
+.rsvp {
+    padding: 10px;
+    background-color: rgb(140, 3, 3);
+    border-radius: 10px;
+    color: white;
+}
+
+.past {
+    background-color: rgb(194, 194, 194);
+}

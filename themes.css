@@ -1,0 +1,32 @@
+.deliverable-type {
+    text-align: center;
+    width: 100%;
+    background-color: var(--htb-red);
+    padding: 3rem;
+    color: white;
+}
+
+.deliverable {
+    /* border: 1px solid red; */
+    align-items: flex-start;
+    width: 25%;
+}
+
+li {
+    line-height: 1.5;
+    margin-left: 20px;
+    margin-top: 5%;
+}
+
+.deliverable-container {
+    align-items: flex-start;
+    /* border: 1px solid red; */
+    margin-top: 5%;
+    width: 100%;
+    justify-content: space-between;
+    height: 50%;
+}
+
+.overview {
+    align-items: flex-start;
+}

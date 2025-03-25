@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./img/logo.ico"  type="image/x-icon">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="themes.css">
+        
+        <title>Hack The Border: Binational Adversarial Series for the Border Good</title>
+    </head>
+
+    <body>
+        
+        <!-- Navigation Bar -->
+        <nav id="nav">
+            <div>
+                <img src="./img/logo.png" alt="">
+                <h1>Hack The Border</h1>
+            </div>
+            <div class="menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="workshops.html"> Workshops +</a>
+                <li><a href="hackathon.html">Hackathon</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="agenda.html">Agenda</a></li>
+            </ul>
+        </nav>
+        
+        
+        <div class="hero">
+            <h1 style="font-size: 4rem;">2025 Spring Datathon: Themes and Rules</h1>
+            <hr style="width: 80%;">
+        </div>
+
+
+
+
+        <section class="main-content flex-center-column">
+            <a href="datathon.html" style="align-self: flex-start;">back</a>
+            <div class="flex-center-column overview">
+                <h1 style="font-size: 4rem; margin-bottom: 2.5%;">Overview</h1>
+                <p style="width: 100%; font-size: 1.5rem; line-height: 1.5;">
+                    The 2025 Datathon will challenge participants to analyze real-world 
+                    environmental and operational data to uncover key trends and insights. 
+                    This year, the event will be more engaging with an interactive model 
+                    of downtown El Paso, enhancing hands-on data exploration. To encourage 
+                    greater participation, five preparatory workshops will be offered, 
+                    equipping participants with essential skills. Participants will have 
+                    the flexibility to use their preferred tools and software for data analysis 
+                    and visualization. Final submissions will include visual presentations 
+                    explaining findings and methodologies, focusing on the real-world impact 
+                    of their insights.
+                </p>
+            </div>
+
+            <div class="flex-center-column overview">
+                <h1 style="font-size: 4rem; margin-bottom: 2.5%; margin-top: 2.5%;">Exploring the LAKE Units</h1>
+                <p>
+                    At the heart of this project are the four LAKE units — LAKE-1, LAKE-2, LAKE-3, and LAKE-4 — which 
+                    are individual turbines at the Lake Power Station in El Paso, Texas. Each of these units operates 
+                    as a standalone power generator, running on natural gas and equipped with advanced emissions control technology.
+                </p>
+
+                <h1 style="margin-bottom: 2.5%; margin-top: 2.5%;">What Kind of Data Do the LAKE Units Provide?</h1>
+                <div class="flex-center-row" style="align-items: flex-start; justify-content: space-between; width: 100%;">
+                    <div style="width: 30%;">
+                        <h2>Emissions Data</h2>
+                        <p>These values reflect the amount of pollutants each unit releases per day:</p>
+                        <ul>
+                            <li>SO2TONS – Sulfur dioxide emissions (tons/day)</li>
+                            <li> NOXTONS – Nitrogen oxides emissions (tons/day)</li>
+                            <li>COTONS – Carbon monoxide emissions (tons/day)</li>
+                            <li>NH3TONS – Ammonia emissions (tons/day)</li>
+                        </ul>
+                    </div>
+                    <div style="width: 30%;">
+                        <h2>Operational Data</h2>
+                        <p>These indicators describe how much energy was generated and how the unit was running:</p>
+                        <ul>
+                            <li>UNITONBT / UNITONBA – Energy output (BTU and average)</li>
+                            <li>HEATINBT / HEATINBA – Heat input (BTU and average)</li>
+                            <li>HEAT_QA – Heat quality check</li>
+                            <li>LOADMWBT / LOADMWBA – Power load (megawatts, both total and average)</li>
+                        </ul>
+                    </div>
+                    <div style="width: 30%;">
+                        <h2>Weather Data</h2>
+                        <p>To better understand each LAKE unit’s behavior, emissions data is paired with daily weather conditions, including:</p>
+                        <ul>
+                            <li>Temperature – tavg, tmin, tmax</li>
+                            <li>Precipitation – prcp, and Snowfall – snow</li>
+                            <li>Wind – Direction (wdir) and speed (wspd)</li>
+                            <li>Pressure – Atmospheric pressure (pres)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-center-column overview">
+                <h1 style="font-size: 4rem; margin-bottom: 2.5%; margin-top: 2.5%;">Tasks</h1>
+                <p>
+                    Your task is to analyze emissions data from the LAKE power units and build predictive models that reveal 
+                    how environmental factors influence pollution output.Using real historical records from 2021 to 2023, your 
+                    goal is to uncover patterns, train models, and generate forecasts for specific days in the past and/or future.
+                </p>
+                <div class="flex-center-row" style="align-items: flex-start; justify-content: space-between; width: 100%;">
+                    <div style="width: 30%;">
+                        <h2>1. Understand the LAKE Data</h2>
+                        <p>Begin by exploring the daily emissions and operational data for each of the four LAKE units, alongside corresponding weather data.</p>
+                        <ul>
+                            <li>Investigate how emissions levels vary between units and over time</li>
+                            <li> Look for trends across seasons, weather conditions, and operational loads</li>
+                            <li>Get familiar with pollutant types like SO₂, NOₓ, and CO, as well as key operational metrics</li>
+                        </ul>
+                    </div>
+                    <div style="width: 30%;">
+                        <h2>2. Build a Predictive Model</h2>
+                        <p>Use machine learning to create a model that predicts daily emissions output based on environmental and operational variables.</p>
+                        <ul>
+                            <li>Train your model using historical data</li>
+                            <li>Forecast emissions for selected days (past, future, or both)</li>
+                            <li>Predict values for SO2TONS, NOXTONS, and COTONS</li>
+                            <li>Evaluate your model’s accuracy using appropriate metrics</li>
+                        </ul>
+                    </div>
+                    <div style="width: 30%;">
+                        <h2>3. Analyze Drivers and Compare Unit Performance</h2>
+                        <p>Go beyond predictions to understand what’s driving emissions and how each LAKE unit performs under similar conditions.</p>
+                        <ul>
+                            <li>Use your model’s feature importance to identify which variables (like temperature or wind) have the most impact</li>
+                            <li>Compare emissions levels across LAKE-1 through LAKE-4 to spot operational differences</li>
+                            <li>Identify which units are more efficient or consistent in their emissions output</li>
+                            <li>Provide possible explanations for variation between units</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <h1 style="margin-top: 10%;">Deliverables</h1>
+            <div class="flex-center-row deliverable-container">
+
+                <div class="deliverable flex-center-column">
+                    <h3 class="deliverable-type">Visualization & Presentation</h3>
+                    <ul>
+                        <li>
+                            This category evaluates how effectively participants communicate their findings using visuals and storytelling. 
+                        </li>
+                        <li>
+                            Judges will assess chart clarity, logical flow, and data interpretation. Strong presentations will have engaging 
+                            visuals, clear takeaways, and structured narratives.
+                        </li>
+                        <li>
+                            Participants should explain their visualizations and connect 
+                            them to key insights.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="deliverable flex-center-column">
+                    <h3 class="deliverable-type">Feature Importance Analysis </h3>
+                    <ul>
+                        <li>
+                            This measures how well participants identify and explain key factors 
+                            influencing emissions. 
+                        </li>
+                        <li>
+                            Judges will look for a clear ranking of features, 
+                            supported by analysis methods like feature importance scores or correlation 
+                            analysis.
+                        </li>
+                        <li>
+                            Strong submissions will justify why certain variables matter and 
+                            connect insights to real-world applications.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="deliverable flex-center-column">
+                    <h3 class="deliverable-type">Predictive Model Output</h3>
+                    <ul>
+                        <li>
+                            This assesses the accuracy and justification of the predictive model. 
+                        </li>
+                        <li>
+                            Participants should provide forecasts from past and future time frames, 
+                            evaluate model performance (R², RMSE, etc.), and compare predictions with actual values.
+                        </li>
+                        <li>
+                            Strong presentations will justify model selection and explain its strengths and limitations.
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+
+        <footer>
+            <img src="./img/NSF.png" alt="NSF Logo">
+            <img src="./img/elpelectric.png" alt="El Paso Electric Logo">
+            <img src="./img/microsoft-logo-4.png" alt="Microsoft Logo">
+            <img src="./img/acm_ucr.png" alt="ACM Logo">
+            <img src="./img/EPCC_logo.png" alt="EPCC Logo">
+            <img src="./img/IEEE-Logo.jpg" alt="IEEE Logo">
+        </footer>
+
+        <script src="./js/main.js" type="text/javascript"></script>
+    </body>
+</html>
